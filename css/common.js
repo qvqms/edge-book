@@ -191,7 +191,7 @@ $(function(){
 
 (function() {
     var flag =false;
-    var chars=['苏维埃','同志','苏维埃政权','苏维埃','同志','苏维埃政权','苏维埃','苏维埃','苏维埃','苏维埃'];
+    var chars=['苏维埃','同志','苏维埃政权','苏维埃','同志','共产党','国际共产党','苏维埃','中国共产党','同志'];
     jQuery(document).ready(function($) {
         $("html").mousemove(function(e) {
             if(flag){
