@@ -6,8 +6,8 @@ $(function(){
     rightNav += "<li><a href='About.html' target='_blank'>关于苏维埃</a></li>";
     rightNav += "<li><a href='time.html' target='_blank'>记录线</a></li>";
     rightNav += "<li><a href='Download.html' target='_blank'>下载苏维埃各版本系统</a></li>";
-    rightNav += "<li><a href='Internet.html' target='_blank'>联盟浏览器</a></li>";
-	rightNav += "<li><a href='fanzha.html' target='_blank'>联盟反诈中心</a></li>";
+    rightNav += "<li><a href='http://www.qijishow.com/down/index.html' target='_blank'>联盟浏览器</a></li>";
+	rightNav += "<li><a href='http://www.qijishow.com/down/resource.html' target='_blank'>联盟反诈中心</a></li>";
     rightNav += "<hr>";
     rightNav += "<li class='qrBtn'><a href='https://space.bilibili.com/506685251' target='_blank'>支持一下BILIBILI</a></li>";
     rightNav += "<li class='qrBox'><img src='http://www.qijishow.com/img/ewm01.jpg' alt='加入官方QQ群/></li>";
@@ -128,27 +128,27 @@ $(function(){
 			var $i;
 			click_cnt++;
 			if (click_cnt == 10) {
-				$i = $("<b></b>").text("O蠅O");
+				$i = $("<b></b>").text("苏维埃");
 			} else if (click_cnt == 20) {
-				$i = $("<b></b>").text("(喙戔€⑻� 鈭€ 鈥⑻€喙�)");
+				$i = $("<b></b>").text("(同志)");
 			} else if (click_cnt == 30) {
-				$i = $("<b></b>").text("(喙戔€⑻� 鈧� 鈥⑻€喙�)");
+				$i = $("<b></b>").text("(国际共产党)");
 			} else if (click_cnt == 40) {
-				$i = $("<b></b>").text("(喙戔€⑻€_鈥⑻佮箲)");
+				$i = $("<b></b>").text("(中国共产党)");
 			} else if (click_cnt == 50) {
-				$i = $("<b></b>").text("锛堬浚銇革浚锛�");
+				$i = $("<b></b>").text("共产党");
 			} else if (click_cnt == 60) {
-				$i = $("<b></b>").text("(鈺板彛掳)鈺�(鈹粹€斺敶");
+				$i = $("<b></b>").text("(苏维埃政权");
 			} else if (click_cnt == 70) {
-				$i = $("<b></b>").text("喃�( 岬捥岀毧岬捥� )醿�");
+				$i = $("<b></b>").text("苏维埃");
 			} else if (click_cnt == 80) {
-				$i = $("<b></b>").text("鈺�(锝�>鍙�<锝�)鈺�");
+				$i = $("<b></b>").text("中国共产党");
 			} else if (click_cnt == 90) {
-				$i = $("<b></b>").text("( 喔� 岬捥岀毧岬捥�)喔団伡鲁鈧屸們");
+				$i = $("<b></b>").text("( 共产党");
 			} else if (click_cnt >= 100 && click_cnt <= 105) {
-				$i = $("<b></b>").text("(陳β搬穭写掳岱�)");
+				$i = $("<b></b>").text("(苏维埃)");
 			} else {
-				$i = $("<b></b>").text("鉂�");
+				$i = $("<b></b>").text("苏维埃政权");
 				n = Math.round(Math.random() * 14 + 6)
 			}
 			var x = e.pageX,
@@ -191,7 +191,7 @@ $(function(){
 
 (function() {
     var flag =false;
-    var chars=['馃榾','馃榿','馃槀','馃槂','馃槃','馃槄','馃槅','馃槆','馃槇','馃槈','馃槉','馃構','馃槍','馃槏','馃槑','馃槒','馃槓','馃槕','馃槖','馃槗','馃様','馃槙','馃槚','馃槜','馃槝','馃槞','馃槡','馃槢','馃槣','馃槤','馃槥','馃槦','馃槧','馃槨','馃槩','馃槪','馃槫','馃槬','馃槮','馃槯','馃槰','馃槱','馃槳','馃槴','馃槵','馃槶','馃槷','馃槸','馃槹','馃槺','馃槻','馃槼','馃槾','馃樀','馃樁','馃樂'];
+    var chars=['苏维埃','同志','苏维埃政权','苏维埃','同志','苏维埃政权','苏维埃','苏维埃','苏维埃','苏维埃'];
     jQuery(document).ready(function($) {
         $("html").mousemove(function(e) {
             if(flag){
