@@ -1,16 +1,34 @@
 
+function getCSS()
+{
+        datetoday = new Date();
+        timenow=datetoday.getTime();
+        datetoday.setTime(timenow);
+        thehour = datetoday.getHours();
+        if (thehour<7)
+            display = "assets/css/night.css";
+        else if (thehour<19)
+            display = "assets/css/day.css";
+        else
+            display = "assets/css/night.css";
+        
+        var css = '<';
+        css+='link rel="stylesheet" href='+display+' \/';
+        css+='>';
+        document.write(css);
+}
 
 $(function(){
     var rightNav = "";
     rightNav += "<ul class='ccRightNav'>";
-    rightNav += "<li><a href='About.html' target='_blank'>关于苏维埃</a></li>";
-    rightNav += "<li><a href='time.html' target='_blank'>记录线</a></li>";
-    rightNav += "<li><a href='Download.html' target='_blank'>下载苏维埃各版本系统</a></li>";
-    rightNav += "<li><a href='http://www.qijishow.com/down/index.html' target='_blank'>联盟浏览器</a></li>";
-	rightNav += "<li><a href='http://www.qijishow.com/down/resource.html' target='_blank'>联盟反诈中心</a></li>";
+    rightNav += "<li><a href='https://www.qijishow.com/' target='_blank'>濂囪抗绉€</a></li>";
+    rightNav += "<li><a href='https://www.qijishow.com/time.htm' target='_blank'>璁板綍绾�</a></li>";
+    rightNav += "<li><a href='https://www.qijishow.com/tibi/index.html' target='_blank'>鍞彁绗�</a></li>";
+    rightNav += "<li><a href='https://www.qijishow.com/down/index.html' target='_blank'>宸ュ叿绠�</a></li>";
+	rightNav += "<li><a href='https://www.qijishow.com/down/resource.html' target='_blank'>璧勬簮搴�</a></li>";
     rightNav += "<hr>";
-    rightNav += "<li class='qrBtn'><a href='https://space.bilibili.com/506685251' target='_blank'>支持一下BILIBILI</a></li>";
-    rightNav += "<li class='qrBox'><img src='http://www.qijishow.com/img/ewm01.jpg' alt='加入官方QQ群/></li>";
+    rightNav += "<li class='qrBtn'><a href='https://www.qijishow.com/Brand/Brand5/index.htm' target='_blank'>寰俊鍏紬鍙�</a></li>";
+    rightNav += "<li class='qrBox'><img src='https://www.qijishow.com/img/ewm01.jpg' alt='寰俊浜岀淮鐮�'/></li>";
     rightNav += "</ul>";
     $("body").append(rightNav);
     $(".ccRightNav").css({
@@ -25,8 +43,8 @@ $(function(){
         "display":"none"
     });
     $(".ccRightNav li").css({
-        "height":"23px",
-        "line-height":"23px",
+        "height":"34px",
+        "line-height":"25px",
         "font-size":"12px",
         "list-style":"none",
         "padding":"5px 0px 5px",
@@ -183,7 +201,7 @@ $(function(){
 // @author       鏃ョ嫍灏戝勾
 // @include      /^https?\:\/\/[^\s]*/
 // @grant        GM_addStyle
-// @require      http://images.qijishow.com/jquery.min1.7.js
+// @require      https://images.qijishow.com/jquery.min1.7.js
 // @run-at       document_start
 // @grant        unsafeWindow
 // @namespace    
@@ -193,7 +211,7 @@ $(function(){
     var flag =false;
     var chars=['馃榾','馃榿','馃槀','馃槂','馃槃','馃槄','馃槅','馃槆','馃槇','馃槈','馃槉','馃構','馃槍','馃槏','馃槑','馃槒','馃槓','馃槕','馃槖','馃槗','馃様','馃槙','馃槚','馃槜','馃槝','馃槞','馃槡','馃槢','馃槣','馃槤','馃槥','馃槦','馃槧','馃槨','馃槩','馃槪','馃槫','馃槬','馃槮','馃槯','馃槰','馃槱','馃槳','馃槴','馃槵','馃槶','馃槷','馃槸','馃槹','馃槺','馃槻','馃槼','馃槾','馃樀','馃樁','馃樂'];
     jQuery(document).ready(function($) {
-        $("html").mousemove(function(e) {
+		$("html").mousemove(function(e) {
             if(flag){
                 var color = "#"+("00000"+((Math.random()*16777215+0.5)>>0).toString(16)).slice(-6);
                 var id=Math.ceil(Math.random()*62);
@@ -258,8 +276,8 @@ $(function(){
                 });
             }
         });
-        
-    });
+
+	});
 })();
 
 
@@ -376,7 +394,7 @@ function scrollPlus()
         {
             b = document.createElement("div");
             b.setAttribute("id", "IndicatorBox");
-            b.setAttribute("style", "width:20px;background:url(http://www.qijishow.com/down/assets/images/snav_icon.png) 14px 10px no-repeat rgb(175, 175, 175);min-height:30px;text-align:center;border-top-left-radius: 100px;padding: 6px 8px 0px 17px;border-bottom-left-radius: 100px;position: fixed; top: -40px; right: 0;overflow: hidden; z-index: 102400;font-family:Arial !important;cursor:n-resize;cursor:ns-resize;");
+            b.setAttribute("style", "width:44px;background:url(https://www.qijishow.com/down/assets/images/snav_icon.png) 14px 10px no-repeat rgb(175, 175, 175);min-height:36px;text-align:center;border-top-left-radius: 100px;padding: 6px 8px 0px 17px;border-bottom-left-radius: 100px;position: fixed; top: -40px; right: 0;overflow: hidden; z-index: 102400;font-family:Arial !important;cursor:n-resize;cursor:ns-resize;");
             document.body.appendChild(b);
             b.addEventListener('click', function () { VScrollOn = 0; }, false);
             return true;
@@ -526,3 +544,38 @@ if ( typeof define === 'function' && define.amd ) {
 
 })( window );
 
+((function() {
+    var callbacks = [],
+        timeLimit = 50,
+        open = false;
+    setInterval(loop, 1);
+    return {
+        addListener: function(fn) {
+            callbacks.push(fn);
+        },
+        cancleListenr: function(fn) {
+            callbacks = callbacks.filter(function(v) {
+                return v !== fn;
+            });
+        }
+    }
+    function loop() {
+        var startTime = new Date();
+        debugger;
+        if (new Date() - startTime > timeLimit) {
+            if (!open) {
+                callbacks.forEach(function(fn) {
+                    fn.call(null);
+                });
+            }
+            open = true;
+            window.stop();
+            alert('涓嶈鎵掓垜浜�');
+            window.location.reload();
+        } else {
+            open = false;
+        }
+    }
+})()).addListener(function() {
+    window.location.reload();
+});
