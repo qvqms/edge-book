@@ -6,8 +6,8 @@ $(function(){
     rightNav += "<li><a href='About.html' target='_blank'>关于苏维埃</a></li>";
     rightNav += "<li><a href='time.html' target='_blank'>记录线</a></li>";
     rightNav += "<li><a href='Download.html' target='_blank'>下载苏维埃各版本系统</a></li>";
-    rightNav += "<li><a href='http://www.qijishow.com/down/index.html' target='_blank'>联盟浏览器</a></li>";
-	rightNav += "<li><a href='http://www.qijishow.com/down/resource.html' target='_blank'>联盟反诈中心</a></li>";
+    rightNav += "<li><a href='Internet.html' target='_blank'>联盟浏览器</a></li>";
+	rightNav += "<li><a href='fanzha.html' target='_blank'>联盟反诈中心</a></li>";
     rightNav += "<hr>";
     rightNav += "<li class='qrBtn'><a href='https://space.bilibili.com/506685251' target='_blank'>支持一下BILIBILI</a></li>";
     rightNav += "<li class='qrBox'><img src='http://www.qijishow.com/img/ewm01.jpg' alt='加入官方QQ群/></li>";
